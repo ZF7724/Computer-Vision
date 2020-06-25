@@ -19,9 +19,9 @@ while True:
                                     minNeighbors=6)
     
     for x,y,w,h in faces:
-        Gray=cv2.rectangle(Gray,(x,y),(x+w,y+h),(0,255,0),3)
+        frame=cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),3)
     
-    cv2.imshow("Window", Gray)
+    cv2.imshow("Window",frame)
     
     
     print(frame)
@@ -34,10 +34,5 @@ print("Number of frames: {}".format(a))
 
 video_capture.release()
 cv2.destroyAllWindows()
-
-
-
-
-
 
 
